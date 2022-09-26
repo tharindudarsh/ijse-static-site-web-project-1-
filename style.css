@@ -1,0 +1,118 @@
+@import url(../ijse/css/reset.css.css);
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap);
+
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+ .clear-fix{
+    clear: both;
+ }
+
+ h2{
+    line-height: 1.8rem;
+ }
+ h3{
+    line-height: 1.8rem;
+ }
+ h4{
+    line-height: 1.6rem;
+ }
+ h5{
+    line-height: 1.4rem;
+ }
+ h6{
+    line-height: 1.2rem;
+ }
+
+
+ /*layout*/
+
+#header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height:var(--header-height);
+    border-bottom:1px solid var(---layout-border-color);
+
+ }
+
+ #nav{
+    
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    bottom: 0;
+    width: var(--nav-width);
+    border-right: 1px solid var(---layout-border-color);
+ }
+ #main{
+    
+    margin-left: var(--nav-width);
+    margin-top: var(--header-height);
+ }
+
+ :root{
+    --header-height:50px;
+    --nav-width:150px;
+    ---layout-border-color:lightgray;
+ }
+
+ #footer{
+    text-align: center;
+    padding: 10px 10px 15px;
+ }
+
+ #logo{
+    padding-left: 10px;
+ }
+ #smLogo{
+    
+    float: right;
+    height: var(--header-height);
+    padding-right: 10px;
+
+ }
+ #smLogo .smIcons{
+    float: left;
+    display: inline-block;
+    height: 100%;
+    cursor: pointer;
+    transition:background-color 500ms,width 370ms ;
+    padding: 10px 15px;
+    font-weight: 500;
+    width: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+ }
+
+#smLogo .smIcons ion-icon{
+    font-size: 1.3rem;
+   
+    color: #666;
+padding-right: 5px;
+vertical-align: sub;
+    
+}
+
+#smLogo .smIcons:not(.smIcons:last-child) {
+    border-right: 1px solid var(---layout-border-color);
+}
+
+#smLogo .smIcons:hover{
+    background-color: #c4302b;
+    color:antiquewhite;
+    width: 125px;
+     
+}
+
+#smLogo .smIcons ion-icon:hover{
+    color: antiquewhite;
+}
+
+
+ 
+
+
